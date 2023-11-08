@@ -1,6 +1,6 @@
 {
-  "homepage": "https://GustavoHSFernandes.github.io/frontend",
-  "name": "frontend",
+  "homepage": "https://GustavoHSFernandes.github.io",
+  "name": "foodmarket",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
