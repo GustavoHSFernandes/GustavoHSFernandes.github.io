@@ -68,12 +68,12 @@ export const Register = () => {
                         value={gender}
                         onChange={(e) => setGender(e.target.value)}
                     >
-                        <option className="focus-input" data-placeholder="Sexo"/>
+                        <option className="focus-input" data-placeholder="Gênero"/>
                         <option value="male">Masculino</option>
                         <option value="female">Feminino</option>
                         <option value="not">Prefiro não dizer</option>
                     </select>
-                    <span className="focus-input" data-placeholder="Sexo"></span>
+                    <span className="focus-input" data-placeholder="Gênero"></span>
                 </div>
 
                 <div className="container-login-form-btn">

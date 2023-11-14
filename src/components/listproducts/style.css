@@ -100,7 +100,7 @@
   margin-top: 1.3rem;
 }
 
-input {
+input[type=search] {
   margin-top: 30px;
   padding: 12px 20px;
   border: none;
@@ -112,6 +112,6 @@ input {
   width: 14rem;
 }
 
-input:hover{
+input[type=search]:hover{
   background-color: #ccc;
 }
