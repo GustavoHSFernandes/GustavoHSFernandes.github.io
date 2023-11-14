@@ -38,20 +38,31 @@ export const AddProduct = () => {
                 <div className="wrap-input">
                     <input
                         className={expiration !== "" ? "has-val input" : "input"}
-                        type="date"
+                        type="date" required
                         value={expiration}
                         onChange={(e) => setExpiration(e.target.value)}
+                        
                     />
                     <span className="focus-input" data-placeholder="Validade"></span>
                 </div>
 
                 <div className="wrap-input">
-                    <input
+                    <select
                         className={category !== "" ? "has-val input" : "input"}
-                        type="email"
+                        type=""
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
-                    />
+                    >
+                        <option className="focus-input" data-placeholder="Categoria"/>
+                        <option value="1">Cereais, Pães e Tubérculos</option>
+                        <option value="2">Hortaliças</option>
+                        <option value="3">Frutas</option>
+                        <option value="4">Leguminosas</option>
+                        <option value="5">Carnes e ovos</option>
+                        <option value="6">Leite e derivados</option>
+                        <option value="7">Óleos e gorduras</option>
+                        <option value="8">Açúcares</option>
+                    </select>
                     <span className="focus-input" data-placeholder="Categoria"></span>
                 </div>
 

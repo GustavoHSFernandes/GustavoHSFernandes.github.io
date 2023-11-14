@@ -13,7 +13,7 @@ export const Sidebar = () => {
         <Price/>
         <div className="search-input">
             <input
-             type="text" 
+             type="search" 
              className="searchbar" 
              placeholder="Pesquisar"/>
         </div>

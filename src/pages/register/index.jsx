@@ -1,12 +1,21 @@
+import { green } from "@mui/material/colors";
 import { LayoutComponents } from "../../components/login"
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
+import Dropdown from 'react-bootstrap/Dropdown'
+import { Select } from "semantic-ui-react";
 
 export const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
+    const [gender, setGender] = useState("");
+    const options = [
+        { value: "male", label: "Masculino" },
+        { value: "female", label: "Feminino" },
+        { value: "not", label: "Prefiro não dizer" }
+    ]
     return (
         <LayoutComponents>
             <form className="login-form">
@@ -50,6 +59,21 @@ export const Register = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <span className="focus-input" data-placeholder="Senha"></span>
+                </div>
+
+                <div className="wrap-input">
+                    <select
+                        className={gender !== "" ? "has-val input" : "input"}
+                        type=""
+                        value={gender}
+                        onChange={(e) => setGender(e.target.value)}
+                    >
+                        <option className="focus-input" data-placeholder="Sexo"/>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                        <option value="not">Prefiro não dizer</option>
+                    </select>
+                    <span className="focus-input" data-placeholder="Sexo"></span>
                 </div>
 
                 <div className="container-login-form-btn">

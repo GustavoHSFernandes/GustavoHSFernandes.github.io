@@ -29,19 +29,19 @@ export const Profile = () => {
             <h1>Dados Cadastrados</h1>
             <hr />
             <div className="info-frame">
-              Nome:
+              Nome: Nome Cadastrado
             </div>
             <div className="info-frame">
-              Sexo:
+              Sexo: ------x------
             </div>
             <div className="info-frame">
-              Data de nascimento:
+              Data de nascimento: DD/MM/AAAA
             </div>
             <div className="info-frame">
-              Email:
+              Email: mail@mail.com
             </div>
             <div className="info-frame">
-              Telefone Celular:
+              Telefone Celular: XX XXXXX-XXXX
             </div>
           </div>
         </div>
